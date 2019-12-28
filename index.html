@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type="text/javascript" src="assets/js/jquery.js"></script>	
+		<script type="text/javascript" src="assets/js/handlebars.js"></script>
+		<script type="text/javascript" src="assets/js/template_script.js"></script>
+		<template id="page-content" type="text/x-handlebars-template">
+			<div class="container nopadding">
+			  <div class="portfolio">
+			    <div class="portfolio-grid">
+			      </div>
+			      
+			      <div class="col-md-2 col-sm-0"></div>
+			      <div class="col-md-8 col-sm-12">
+			        <h1>Ravi Woods</h1>
+			        <h2>Creative Technologist</h2>
+			        <h2>raviwoods@gmail.com</h2>
+			        <div class="row portfolio-container nopadding text-center">
+			          <!-- route item -->
+			          <div class="col-md-6 col-sm-6 nopadding design">
+			            <a href="dolesce.html" class="portfolio_item wow fadeInDown" data-wow-delay= "0.3s">
+			              <img src="assets/images/dolesce.png" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+			                  <h2>Dolesce</h2>
+			                  <p>
+			                    Design Thinking, UI/UX Design
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          <!-- route item end -->
+
+			          <!-- route item -->
+			          <div class="col-md-6 col-sm-6 nopadding design">
+			            <a href="superform.html" class="portfolio_item wow fadeInDown" data-wow-delay= "0.3s">
+			              <img src="assets/images/superform.jpg" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+			                  <h2>Break to Make</h2>
+			                  <p>
+			                    Physical, Sculpture
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          <!-- route item end -->
+
+			          <!-- route item -->
+			          <div class="col-md-6 col-sm-6 nopadding webdev design brand">
+			            <a href="continuum.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.4s">
+			              <img src="assets/images/continuum.jpg" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+			                  <h2>Continuum</h2>
+			                  <p>
+			                    Installation, Physical, Mechanical Engineering
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          <!-- route item end -->
+
+			          <!-- route item -->
+			          <div class="col-md-6 col-sm-6 nopadding ecommerce brand">
+			            <a href="sensorium.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.6s">
+			              <img src="assets/images/sensorium.jpg" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+			                  <h2>Sensorium</h2>
+			                  <p>
+			                    Installation, Electronic Engineering
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          <!-- route item end -->
+
+			          <!--
+			          <div class="col-md-4 col-sm-6 nopadding design ecommerce brand">
+			            <a href="project-single.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.7s">
+			              <img src="assets/images/pwtb.png" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+			                  <h2>Play With The Band</h2>
+			                  <p>
+			                    App Design, Software
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          -->
+
+			          <!-- 
+			          <div class="col-md-6 col-sm-6 nopadding design ecommerce brand">
+			            <a href="iccu.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.8s">
+			              <img src="assets/images/iccu.jpg" alt="image" class="img-responsive" />
+			              <div class="portfolio-overlay">
+			                <div class="overlay-items">
+
+			                  <h2>Are Christians Braindead?</h2>
+			                  <p>
+			                    Graphics, Branding
+			                  </p>
+			                </div>
+			              </div>
+			            </a>
+			          </div>
+			          -->
+
+			        </div>
+			      </div><!-- Portfolio End -->
+			      <div class="col-md-2 col-sm-0"></div>
+
+			    </div>
+			  </div>
+			</div>
+		</template>
+		
+		<script type="text/javascript">
+			display_template_remote(
+				'head.html', {title: "Dolesce"}, 'head');
+
+			display_template_remote(
+				'body.html', {}, 'body');
+
+			Handlebars.registerPartial(
+				"content", document.getElementById("page-content").innerHTML);
+		</script>
+
+		<script defer type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="assets/js/plugins.js"></script>
+		<script defer type="text/javascript" src="assets/js/menu.js"></script>
+		<script defer type="text/javascript" src="assets/js/custom.js"></script>
+	</head>
+	<body>
+	</body>
+</html>
+
+

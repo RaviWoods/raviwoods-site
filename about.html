@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>  
+    <script type="text/javascript" src="assets/js/handlebars.js"></script>
+    <script type="text/javascript" src="assets/js/template_script.js"></script>
+    <template id="page-content" type="text/x-handlebars-template">
+      <div class="container nopadding">
+        <div class="intro">
+          <div class="col-md-12">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <img class="img-responsive" src="assets/images/face.jpg" alt="face" />
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <h2>
+                Hi, I'm Ravi! <br><br>  
+                I am currently studying Innovation Design Engineering, at the Royal College of Art and Imperial College London. <br><br> 
+                I have a background in electronics and software, graduating from Imperial College with a first class honours in Electronic Engineering. <br><br> 
+                I am experienced at producing innovative prototypes in creative settings; both with electronics (including Arduino and Raspberry Pi) and with code (Javascript, Python, C++).
+                <br><br> 
+                If you would like to get in touch, just email me at raviwoods@gmail.com </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    
+    <script type="text/javascript">
+      display_template_remote(
+        'head.html', {title: "About Me"}, 'head');
+
+      display_template_remote(
+        'body.html', {}, 'body');
+
+      Handlebars.registerPartial(
+        "content", document.getElementById("page-content").innerHTML);
+    </script>
+
+    <script defer type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="assets/js/plugins.js"></script>
+    <script defer type="text/javascript" src="assets/js/menu.js"></script>
+    <script defer type="text/javascript" src="assets/js/custom.js"></script>
+  </head>
+  <body>
+  </body>
+</html>

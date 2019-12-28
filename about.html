@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="assets/js/jquery.js"></script>  
-    <script type="text/javascript" src="assets/js/handlebars.js"></script>
-    <script type="text/javascript" src="assets/js/template_script.js"></script>
-    <template id="page-content" type="text/x-handlebars-template">
-      <div class="container nopadding">
-        <div class="intro">
-          <div class="col-md-12">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <img class="img-responsive" src="assets/images/face.jpg" alt="face" />
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-12">
-                <h2>
-                Hi, I'm Ravi! <br><br>  
-                I am currently studying Innovation Design Engineering, at the Royal College of Art and Imperial College London. <br><br> 
-                I have a background in electronics and software, graduating from Imperial College with a first class honours in Electronic Engineering. <br><br> 
-                I am experienced at producing innovative prototypes in creative settings; both with electronics (including Arduino and Raspberry Pi) and with code (Javascript, Python, C++).
-                <br><br> 
-                If you would like to get in touch, just email me at raviwoods@gmail.com </h2>
+    <meta charset="utf-8">
+    <!-- TO EDIT --><title>About</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Route Multipurpose Agency Template">
+    <meta name="keywords" content="Agency HTML Template, Anchor Agency, Agency Portfolio Template">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="assets/css/bebas-neue.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div class="wrapper">
+      <!-- TODO: STOP TRIGGER-->
+      <img src="assets/images/logo.png" alt="RW" class="logo">
+      <div class="nav-trigger" role="button" title="sweet hamburger">
+        <div class="hamburger">
+          <div class="icon"></div>
+        </div>
+      </div>
+
+      <div id="top-nav" class="hidden-xs">
+          <ul class="navigation">
+            <!-- TODO: HIGHLIGHT CURRENT-->
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+            
+            <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank"><i class="font24 ion-social-linkedin"></i></a></li>
+            <li><a href="https://www.github.com/raviwoods" target="_blank"><i class="font24 ion-social-github"></i></a></li>
+            <li><a href="https://www.instagram.com/raviwoods/" target="_blank"><i class="font24 ion-social-instagram-outline"></i></a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+      </div>
+
+      <div id="nav-menu" class="visible-xs">
+          <ul class="navigation">
+            <!-- TODO: HIGHLIGHT CURRENT-->
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <div class="col-xs-12 nav-social">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank"><i class="font24 ion-social-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/raviwoods" target="_blank"><i class="font24 ion-social-github"></i></a></li>
+                <li><a href="https://www.instagram.com/raviwoods/" target="_blank"><i class="font24 ion-social-instagram-outline"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div class="main">
+        <div class="container nopadding">
+          <div class="intro">
+            <div class="col-md-12">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <img class="img-responsive" src="assets/images/face.jpg" alt="face" />
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                  <h2>
+                  Hi, I'm Ravi! <br><br>  
+                  I am currently studying Innovation Design Engineering, at the Royal College of Art and Imperial College London. <br><br> 
+                  I have a background in electronics and software, graduating from Imperial College with a first class honours in Electronic Engineering. <br><br> 
+                  I am experienced at producing innovative prototypes in creative settings; both with electronics (including Arduino and Raspberry Pi) and with code (Javascript, Python, C++).
+                  <br><br> 
+                  If you would like to get in touch, just email me at raviwoods@gmail.com </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </template>
-    
-    <script type="text/javascript">
-      display_template_remote(
-        'head.html', {title: "About Me"}, 'head');
+        <div class="footer">
+          <div class="container">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <ul class="navfooter">
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="social">
+                <ul class="socialfooter" >
+                  <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://www.github.com/raviwoods" target="_blank">GitHub</a></li>
+                  <li><a href="https://www.instagram.com/raviwoods/" target="_blank">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--Main -->
+    </div><!-- Wrapper -->
+    </div><!-- Wrapper -->
 
-      display_template_remote(
-        'body.html', {}, 'body');
 
-      Handlebars.registerPartial(
-        "content", document.getElementById("page-content").innerHTML);
-    </script>
-
-    <script defer type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script defer type="text/javascript" src="assets/js/plugins.js"></script>
-    <script defer type="text/javascript" src="assets/js/menu.js"></script>
-    <script defer type="text/javascript" src="assets/js/custom.js"></script>
-  </head>
-  <body>
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
   </body>
 </html>

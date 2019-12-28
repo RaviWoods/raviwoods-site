@@ -8,10 +8,9 @@ jQuery(function($) {
 
     $(window).load(function() {
     		setTimeout(function() {
-    		$("#wrapper").css("opacity", 1);
             $('#loading').fadeOut('slow', function() {
             });
-        }, 200);
+        }, 700);
     });
 
 

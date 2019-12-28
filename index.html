@@ -1,145 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script type="text/javascript" src="assets/js/jquery.js"></script>	
-		<script type="text/javascript" src="assets/js/handlebars.js"></script>
-		<script type="text/javascript" src="assets/js/template_script.js"></script>
-		<template id="page-content" type="text/x-handlebars-template">
-			<div class="container nopadding">
-			  <div class="portfolio">
-			    <div class="portfolio-grid">
-			      </div>
-			      
-			      <div class="col-md-2 col-sm-0"></div>
-			      <div class="col-md-8 col-sm-12">
-			        <h1>Ravi Woods</h1>
-			        <h2>Creative Technologist</h2>
-			        <h2>raviwoods@gmail.com</h2>
-			        <div class="row portfolio-container nopadding text-center">
-			          <!-- route item -->
-			          <div class="col-md-6 col-sm-6 nopadding design">
-			            <a href="dolesce.html" class="portfolio_item wow fadeInDown" data-wow-delay= "0.3s">
-			              <img src="assets/images/dolesce.png" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
-			                  <h2>Dolesce</h2>
-			                  <p>
-			                    Design Thinking, UI/UX Design
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          <!-- route item end -->
+  <head>
+    <meta charset="utf-8">
+    <title>Work</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Route Multipurpose Agency Template">
+    <meta name="keywords" content="Agency HTML Template, Anchor Agency, Agency Portfolio Template">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="assets/css/bebas-neue.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div class="wrapper">
+      <!-- TODO: STOP TRIGGER-->
+      <img src="assets/images/logo.png" alt="RW" class="logo">
+      <div class="nav-trigger" role="button" title="sweet hamburger">
+        <div class="hamburger">
+          <div class="icon"></div>
+        </div>
+      </div>
 
-			          <!-- route item -->
-			          <div class="col-md-6 col-sm-6 nopadding design">
-			            <a href="superform.html" class="portfolio_item wow fadeInDown" data-wow-delay= "0.3s">
-			              <img src="assets/images/superform.jpg" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
-			                  <h2>Break to Make</h2>
-			                  <p>
-			                    Physical, Sculpture
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          <!-- route item end -->
+      <div id="top-nav" class="hidden-xs">
+          <ul class="navigation">
+            <!-- TODO: HIGHLIGHT CURRENT-->
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+            
+            <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank"><i class="font24 ion-social-linkedin"></i></a></li>
+            <li><a href="https://www.github.com/raviwoods" target="_blank"><i class="font24 ion-social-github"></i></a></li>
+            <li><a href="https://www.instagram.com/raviwoods/" target="_blank"><i class="font24 ion-social-instagram-outline"></i></a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+      </div>
 
-			          <!-- route item -->
-			          <div class="col-md-6 col-sm-6 nopadding webdev design brand">
-			            <a href="continuum.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.4s">
-			              <img src="assets/images/continuum.jpg" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
-			                  <h2>Continuum</h2>
-			                  <p>
-			                    Installation, Physical, Mechanical Engineering
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          <!-- route item end -->
+      <div id="nav-menu" class="visible-xs">
+          <ul class="navigation">
+            <!-- TODO: HIGHLIGHT CURRENT-->
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
 
-			          <!-- route item -->
-			          <div class="col-md-6 col-sm-6 nopadding ecommerce brand">
-			            <a href="sensorium.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.6s">
-			              <img src="assets/images/sensorium.jpg" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
-			                  <h2>Sensorium</h2>
-			                  <p>
-			                    Installation, Electronic Engineering
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          <!-- route item end -->
+          <div class="col-xs-12 nav-social">
+            <ul>
+                <!-- TODO: CENTER WITHOUT SPACERS-->
+                <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank"><i class="font24 ion-social-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/raviwoods" target="_blank"><i class="font24 ion-social-github"></i></a></li>
+                <li><a href="https://www.instagram.com/raviwoods/" target="_blank"><i class="font24 ion-social-instagram-outline"></i></a></li>
+            </ul>
+          </div>
+      </div>
 
-			          <!--
-			          <div class="col-md-4 col-sm-6 nopadding design ecommerce brand">
-			            <a href="project-single.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.7s">
-			              <img src="assets/images/pwtb.png" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
-			                  <h2>Play With The Band</h2>
-			                  <p>
-			                    App Design, Software
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          -->
+      <div class="main">
+        <div class="container nopadding">
+          <!--<div class="intro">
+            <div class="col-md-12">
+              <h1>Ravi Woods</h1>
+              <h3>
+                With a background in Electronic Engineering, I love working with electronics and code within creative projects. 
+                My design approach is to start making as soon as possible, with a drive to learn new skills in every project.
+              </h3>
+            </div>
+          </div>-->
+        <div class="portfolio">
+              <div class="portfolio-grid">
+                </div>
+                
+                <div class="col-md-2 col-sm-0"></div>
+                <div class="col-md-8 col-sm-12">
+                  <h1>Ravi Woods</h1>
+                  <h2>Maker, Programmer and Designer</h2>
+                  <h2>raviwoods@gmail.com</h2>
+                  <div class="row portfolio-container nopadding text-center">
+                    <!-- route item -->
+                    <div class="col-md-6 col-sm-6 nopadding design">
+                      <a href="superform.html" class="portfolio_item wow fadeInDown" data-wow-delay= "0.3s">
+                        <img src="assets/images/superform.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
+                            <h2>Break to Make</h2>
+                            <p>
+                              Experimentation, Sculpture
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- route item end -->
 
-			          <!-- 
-			          <div class="col-md-6 col-sm-6 nopadding design ecommerce brand">
-			            <a href="iccu.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.8s">
-			              <img src="assets/images/iccu.jpg" alt="image" class="img-responsive" />
-			              <div class="portfolio-overlay">
-			                <div class="overlay-items">
+                    <!-- route item -->
+                    <div class="col-md-6 col-sm-6 nopadding webdev design brand">
+                      <a href="continuum.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.4s">
+                        <img src="assets/images/continuum.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
+                            <h2>Continuum</h2>
+                            <p>
+                              Installation, Mechanical Engineering
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- route item end -->
 
-			                  <h2>Are Christians Braindead?</h2>
-			                  <p>
-			                    Graphics, Branding
-			                  </p>
-			                </div>
-			              </div>
-			            </a>
-			          </div>
-			          -->
+                    <!--
+                    <div class="col-md-4 col-sm-6 nopadding design ecommerce brand webdev">
+                      <a href="project-single-2.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.5s">
+                        <img src="assets/images/nt.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
+                            <h2>Neuron Technology</h2>
+                            <p>
+                              UI/UX, Software
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    -->
 
-			        </div>
-			      </div><!-- Portfolio End -->
-			      <div class="col-md-2 col-sm-0"></div>
+                    <!-- route item -->
+                    <div class="col-md-6 col-sm-6 nopadding ecommerce brand">
+                      <a href="sensorium.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.6s">
+                        <img src="assets/images/sensorium.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
+                            <h2>Sensorium</h2>
+                            <p>
+                              Installation, Electronic Engineering
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- route item end -->
 
-			    </div>
-			  </div>
-			</div>
-		</template>
-		
-		<script type="text/javascript">
-			display_template_remote(
-				'head.html', {title: "Dolesce"}, 'head');
+                    <!--
+                    <div class="col-md-4 col-sm-6 nopadding design ecommerce brand">
+                      <a href="project-single.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.7s">
+                        <img src="assets/images/pwtb.png" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
+                            <h2>Play With The Band</h2>
+                            <p>
+                              App Design, Software
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    -->
 
-			display_template_remote(
-				'body.html', {}, 'body');
+                    <!-- route item -->
+                    <div class="col-md-6 col-sm-6 nopadding design ecommerce brand">
+                      <a href="iccu.html" class="portfolio_item wow fadeInDown" data-wow-delay="0.8s">
+                        <img src="assets/images/iccu.jpg" alt="image" class="img-responsive" />
+                        <div class="portfolio-overlay">
+                          <div class="overlay-items">
 
-			Handlebars.registerPartial(
-				"content", document.getElementById("page-content").innerHTML);
-		</script>
+                            <h2>Are Christians Braindead?</h2>
+                            <p>
+                              Graphics, Branding
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- route item end -->
 
-		<script defer type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<script defer type="text/javascript" src="assets/js/plugins.js"></script>
-		<script defer type="text/javascript" src="assets/js/menu.js"></script>
-		<script defer type="text/javascript" src="assets/js/custom.js"></script>
-	</head>
-	<body>
-	</body>
+                  </div>
+                </div><!-- Portfolio End -->
+                <div class="col-md-2 col-sm-0"></div>
+
+              </div>
+            </div>
+        </div>
+
+        <div class="footer">
+          <div class="container">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <ul class="navfooter">
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="social">
+                <ul class="socialfooter" >
+                  <li><a href="https://www.linkedin.com/in/raviwoods" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://www.github.com/raviwoods" target="_blank">GitHub</a></li>
+                  <li><a href="https://www.instagram.com/raviwoods/" target="_blank">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--Main -->
+    </div><!-- Wrapper -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+  </body>
 </html>
-
-

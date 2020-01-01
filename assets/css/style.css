@@ -1004,25 +1004,15 @@ ul {
 }
 
 .portfolio-overlay {
- background: #FAFAFA;
- opacity: 0;
- position:absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- -webkit-transition: all 0.5s;
- -moz-transition: all 0.5s;
- -o-transition: all 0.5s;
-   transition: all 0.5s;
-
+ position: absolute;
+ left: 15px;
+ right: 15px;
+ top: 15px;
 }
 
 .overlay-items {
- position: absolute;
- top: 45%;
- left: 0;
- right: 0;
+ background-image: linear-gradient(rgba(0,0,0,0.5) 80%, rgba(0,0,0,0));
+ padding: 10px 10px 10px 10px !important;
 }
 
 .overlay-items h2 {
@@ -1030,61 +1020,17 @@ ul {
 	font-weight: 200 !important;
 	text-transform: uppercase;
 	letter-spacing: -1.5px;
-	display: block;
-	color: #3D3D3D;
-	font-weight: normal;
-	-webkit-transform: translateY(0);
-	-moz-transform: translateY(0);
-	-o-transform: translateY(0);
-	transform: translateY(0);
-	-webkit-transition: all .5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all .5s;
-	opacity: 0;
+	color: #FFFFFF;
+  font-size: 30px;
 }
 
 .overlay-items p {
- margin-top: 10px;
- opacity: 0;
  font-size: 16px;
  font-family: Jura;
  line-height: 1.5;
  letter-spacing: 0;
- color: #2D2D2D;
- display: inline-block;
- -webkit-transform: translateY(0);
- -moz-transform: translateY(0);
- -o-transform: translateY(0);
- transform: translateY(0);
- -webkit-transition: all .5s;
- -moz-transition: all 0.5s;
- -o-transition: all 0.5s;
- transition: all .5s;
-}
+ color: #FFFFFF;
 
-.portfolio_item:focus, .portfolio_item:hover {
-  text-decoration: none;
-}
-
-.portfolio_item:hover .portfolio-overlay {
- 	opacity: 1;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-		transition: all 0.5s;
-}
-
-.portfolio_item:hover h2, .portfolio_item:hover p {
- opacity: 1;
- -webkit-transition: all 0.5s;
- -moz-transition: all 0.5s;
- -o-transition: all 0.5s;
-	 transition: all 0.5s;
- -webkit-transform: translateY(0);
- -moz-transform: translateY(0);
- -o-transform: translateY(0);
- transform: translateY(0);
 }
 
 .colored p {
@@ -1973,10 +1919,6 @@ label {
 		 height: 40vw;
 	 }
 
-	 .overlay-items h2 { 
-		font-size: 40px;
-	 }
-
 	 .logo {
 		 left: 8.5%;
 
@@ -2148,9 +2090,6 @@ label {
 	 	font-size: 35px;
 	 }
 
-	 .overlay-items h2 { 
-		font-size: 33px;
-	 }
 
 	 .project-section .project-intro p {
 		padding: 17px 0 17px 0;
